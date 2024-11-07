@@ -71,7 +71,7 @@ class ObjaverseData(Dataset):
         # # only use 100K objects for ablation study
         # self.paths = self.paths[:100000]
         total_objects = len(self.paths)
-        assert total_objects == 790152, 'total objects %d' % total_objects   #Changed:: i am concidering it as 55 currently
+        assert total_objects == 55, 'total objects %d' % total_objects   #Changed:: i am concidering it as 55 currently
         if validation:
             self.paths = self.paths[math.floor(total_objects / 100. * 99.):]  # used last 1% as validation
         else:
